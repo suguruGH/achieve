@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="/user_confirm" method="POST">
+            <%= @error %>
+            <h1>新規登録</h1>
+            <div>
+                お名前<input type="text" name="name">
+            </div>
+            <div>
+                メールアドレス<input type="text" name="email">
+            </div>
+            <div>
+                パスワード<input type="password" name="password">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </body>
+</html>

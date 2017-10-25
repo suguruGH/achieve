@@ -1,0 +1,169 @@
+演習問題１番号　１、２、４、５
+
+演習問題２
+puts "Dive into Code"
+puts "私は受講生です"
+puts "30歳です"
+
+演習問題３
+puts 5 + 5 == 10
+puts 8 - 3 == 5
+puts 5 * 5 == 25
+puts 40 / 5 == 8
+puts 28 % 6 == 4
+
+演習問題４
+puts 10 < 8 == false
+puts 30 > 25 == true
+puts 15 == 15 == true
+puts 20 > 30 == false
+puts 8 < 10 == true
+
+演習問題５
+false
+true
+true
+比較できない
+true
+false
+true
+false
+比較できない
+false
+
+演習問題６
+name = "山田太郎"
+age = 18
+puts name
+puts age
+
+演習問題７
+puts "私は#{name}と言います。年齢は#{age}歳です。"
+
+演習問題 8-1
+season = ["春","夏","秋"]
+
+演習問題 8-2
+season << "冬"
+
+演習問題 8-3
+puts season[2]
+
+演習問題 9-1
+house = {price: "2000万",location: "東京",size: "100坪"}
+
+演習問題 9-2
+puts house[1][:location]
+
+演習問題 10
+house = [{price:"2000万",location: "東京都",size:"80坪"},{price:"1500万",location:"千葉県",size:"50坪"},{price:"800万",location:"埼玉県",size:"100坪"}]
+
+puts house[1][:location]
+puts house[0][:size]
+puts house[2][:price] + "," + house[2][:size]
+
+
+
+
+演習問題 11-1
+num = 0 
+  if num > 50
+    puts "50より大きいよ"
+  else num < 50
+    puts "50未満だよ"
+  end    
+  
+演習問題 11-2
+num = 30
+  if num > 50
+    puts "50より大きいよ"
+  elsif num == 30
+    puts "30ジャストだよ"
+  elsif num % 2 == 0
+    puts "numは偶数"  
+  else num < 50
+    puts "50未満だよ"
+  end    
+    
+演習問題　12
+num = 10
+  if num > 50
+    puts "50より大きいよ"
+  elsif num == 30
+    puts "30ジャストだよ"
+  elsif num % 2 == 0
+    puts "numは偶数"
+elsif num % 2 != 0
+    puts "numは奇数だよ"
+  else num < 50
+    puts "50未満だよ"
+  end    
+  
+演習問題 13
+10.times do
+  puts "おはよう"
+  end
+  
+演習問題 14
+for i in 0..10 do
+  puts "こんにちは"  
+end
+
+演習問題 16
+numbers = 1..10
+numbers.each do |num|
+  puts num
+end
+
+演習問題 17-1
+def addition
+end
+
+演習問題 17-2
+addition
+
+演習問題 17-3
+def addition(x,y,z)
+  return x + y + z
+end
+puts addition(2,3,7)
+
+演習問題 17-4
+def addition(x,y,z)
+  return x + y
+end  
+puts addition(2,3,7)
+
+演習問題 17-5
+def addition
+ end
+ addition
+
+ def addition(x,y,z)
+     return x + y + z
+ end
+   puts addition(2,3,7)
+
+ def ave(x,y,z)
+     return (addition(x,y,z)) / 3
+ end
+ puts ave(10,5,0)
+ 
+演習問題 18
+def division(x,y)
+    return x / y
+end
+puts division(10,5)
+
+演習問題 19
+エラーです。
+
+演習問題 20
+date = ["今日","明日"]
+place = ["渋谷","池袋"]
+food = ["カレー","オムライス"]
+def doing(date,place,food)
+  "#{date} は #{place} で #{food} を食べる"
+end
+puts doing(date[0],place[0],food[0])
+puts doing(date[1],place[1],food[1])
